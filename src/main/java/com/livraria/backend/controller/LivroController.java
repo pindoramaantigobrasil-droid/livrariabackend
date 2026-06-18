@@ -19,7 +19,10 @@ import com.livraria.backend.service.LivroService;
 
 @RestController
 @RequestMapping("/livros")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin{
+        "http://localhost:5173",
+        "https://livrariafrontend.onrender.com"
+    }
 public class LivroController {
 
     @Autowired
